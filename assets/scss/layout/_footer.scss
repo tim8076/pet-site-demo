@@ -1,4 +1,22 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer {
+  &-logo {
+    width: 140px;
+    height: 38px;
+    @include media-breakpoint-up(md) {
+      width: 178px;
+      height: 48px;
+    }
+  }
+  &-social-icons img {
+    width: 32px;
+    height: 32px;
+    @include media-breakpoint-up(md) {
+      width: 40px;
+      height: 40px;
+    }
+    transition: transform 250ms ease;
+  }
+  &-social-icons img:hover {
+    transform: scale(1.2);
+  }
 }
